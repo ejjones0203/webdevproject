@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>about enjie</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="titlecontent">
+            <h1><span class="darkgreen">about me</span></h1>
+        </div>
+        
+        <div class="secondary">
+           <p>I'm currently a 21 year old Junior at Kennesaw State University. I major in Information technology and 
+            I am an intern at a local MSP in Atlanta, Georgia.</p>
+        </div>
+
+        <div class="titlecontent">
+            <h1><span class="darkgreen">I like cats</span></h1>
+        </div>
+
+        <div class="container2">
+            <button id="catbutton">Click here for an image of a cat</button>
+            <img id="catimage" src="" alt="">
+            <button id="closebutton" style="display: none; margin-top: 10px;">Close</button>
+        </div>
+
+        <div id="overlay"></div>
+        <script>
+            document.getElementById("catbutton").addEventListener("click", function() {
+                let img = document.getElementById("catimage");
+                let closebutton = document.getElementById("closebutton");
+
+                img.src = "https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_3x4.jpg";
+                img.style.display = "block";
+                overlay.style.display = "block";
+                closebutton.style.display = "block"; 
+                catbutton.style.display = "none";
+            });
+
+            document.getElementById("closebutton").addEventListener("click", function() {
+                let img = document.getElementById("catimage");
+                let closebutton = document.getElementById("closebutton");
+
+                img.style.display = "none"; 
+                overlay.style.display = "none";
+                closebutton.style.display = "none"; 
+                catbutton.style.display = "block";
+            });
+        </script>
+        
+    </body>
+</html>
