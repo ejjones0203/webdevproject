@@ -1,0 +1,263 @@
+
+/*set default font*/
+* {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*background color*/
+body {
+    background-color: #FFE8D6;
+}
+
+nav {
+    padding: 30px 95%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; 
+    width: 100%;
+    max-width: 120px; 
+    margin: auto 40px; 
+}
+
+.navbar li {
+    margin: 0 25px;
+}
+
+.navbar a {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    color: #3f4238;
+    padding: 5px;
+    transition: color 0.5s ease;
+    font-size: 1.5em; 
+}
+
+/*adds hover effect color*/
+.navbar a:hover {
+    color: #CB997E;
+}
+
+
+/*how to justify content for smaller screens*/
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: right; 
+        padding-right: 0;
+       
+    }
+
+    .navbar a {
+        font-size: 1.5em; 
+        padding: 8px; 
+    }
+
+}
+
+.container{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*contact form*/
+form{
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+
+}
+
+form h3{
+    color: #6B705C;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+/*contact input*/
+form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 16px;
+}
+
+/*contact button effects*/
+form button{
+    padding: 15px;
+    background: #A5A58D;
+    color: #fff;
+    border: 0;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/*change color upon hover for button*/
+form button[type="submit"]:hover{
+    background: #6B705C;
+    transform: scale(1.05);
+}
+
+.maincontent {
+    padding-top: 200px;
+    padding-left: 75px;
+    line-height: 200%;
+    text-align: left;
+    font-size: xxx-large;
+}
+
+.titlecontent {
+    padding-top: 175px;
+    line-height: 200%;
+    text-align: center;
+    font-size: xxx-large;
+}
+
+.darkgreen {
+    color:#6B705C;
+}
+
+.lightgreen{
+    color: #A5A58D;
+}
+
+.lightergreen{
+    color: #B7B7A4;
+}
+
+.tan{
+    color: #DDBEA9;
+}
+
+.clay{
+    color: #CB997E;
+}
+
+#catbutton {
+    display: block;
+    margin: 20px auto;
+    background-color: #A5A58D;  
+    color: white;  
+    border: none;  
+    padding: 10px 20px;  
+    font-size: 16px;  
+    font-weight: bold;  
+    border-radius: 5px;  
+    cursor: pointer;  
+    transition: background-color 0.3s ease, transform 0.2s ease;  /* smooth hover */
+}
+
+#catbutton:hover {
+    background-color: #6B705C;  
+    transform: scale(1.05);  
+}
+
+#catbutton:active {
+    transform: scale(0.98);  /* slightly shrink on click */
+    background-color: #B7B7A4;  
+}
+
+
+
+#closebutton{
+    display: block;
+    position: fixed;
+    bottom: 200px;
+    right: 185px;
+    background-color: #A5A58D;  
+    color: white;  
+    border: none;  
+    padding: 25px ;  
+    border-radius: 5px;  
+    cursor: pointer;  
+    transition: background-color 0.3s ease, transform 0.2s ease;  /* smooth hover and transiton */
+    z-index: 101;
+}
+
+#closebutton:hover {
+    background-color: #6B705C;  
+    transform: scale(1.05);  
+}
+
+#closebutton:active {
+    transform: scale(0.98);  /* slightly shrink when clicked */
+    background-color: #B7B7A4;  
+}
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    height: 7vh; 
+}
+
+#catimage {
+    display: none; 
+    max-width: 50%;
+    max-height: 50%; 
+    border-radius: 10px;
+    border: 8px solid white; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 100; /* this brings the image above every other elemenet */
+}
+
+#overlay {
+    display: none; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 50; 
+}
+
+#catbutton:focus {
+    outline: none; 
+}
+
+
+.secondary {
+    margin: 20px auto;
+    color: #fff;
+    background: #A5A58D;
+    display: flex;
+    flex-direction: column;
+    padding: 3vw 3vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 35px;
+}
+
