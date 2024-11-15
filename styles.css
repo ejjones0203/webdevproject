@@ -12,7 +12,7 @@
 
 /*background color*/
 body {
-    background-color: #FFE8D6;
+    background-color: #ffffff;
 }
 
 nav {
@@ -42,7 +42,7 @@ nav {
     font-weight: 300;
     font-style: normal;
     text-decoration: none;
-    color: #3f4238;
+    color: #e3f2fd;
     padding: 5px;
     transition: color 0.5s ease;
     font-size: 1.5em; 
@@ -50,7 +50,7 @@ nav {
 
 /*adds hover effect color*/
 .navbar a:hover {
-    color: #CB997E;
+    color: #e3f2fd43;
 }
 
 
@@ -69,9 +69,19 @@ nav {
 
 }
 
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+  
+
 .container{
     width: 100%;
-    height: 75vh;
+    height: 65vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,7 +100,7 @@ form{
 }
 
 form h3{
-    color: #6B705C;
+    color: #393a3b;
     font-weight: 800;
     margin-bottom: 20px;
 }
@@ -101,14 +111,15 @@ form input, form textarea{
     margin: 10px 0;
     padding: 20px;
     outline: none;
-    background: #f5f5f5;
+    background: #f0efef;
+    border-radius: 15px;
     font-size: 16px;
 }
 
 /*contact button effects*/
 form button{
     padding: 15px;
-    background: #A5A58D;
+    background: #42a5f5;
     color: #fff;
     border: 0;
     font-size: 18px;
@@ -122,7 +133,7 @@ form button{
 
 /*change color upon hover for button*/
 form button[type="submit"]:hover{
-    background: #6B705C;
+    background: #3889cc;
     transform: scale(1.05);
 }
 
@@ -135,36 +146,43 @@ form button[type="submit"]:hover{
 }
 
 .titlecontent {
-    padding-top: 175px;
+    padding-top: 200px;
+    line-height: 200%;
+    text-align: center;
+    font-size: xxx-large;
+}
+
+.titlecontent2 {
+    padding-top: 55px;
     line-height: 200%;
     text-align: center;
     font-size: xxx-large;
 }
 
 .darkgreen {
-    color:#6B705C;
+    color:#e3f2fd;
 }
 
 .lightgreen{
-    color: #A5A58D;
+    color: #bbdefb;
 }
 
 .lightergreen{
-    color: #B7B7A4;
+    color: #90caf9;
 }
 
 .tan{
-    color: #DDBEA9;
+    color: #64b5f6;
 }
 
 .clay{
-    color: #CB997E;
+    color: #42a5f5;
 }
 
 #catbutton {
     display: block;
     margin: 20px auto;
-    background-color: #A5A58D;  
+    background-color: #42a5f5;  
     color: white;  
     border: none;  
     padding: 10px 20px;  
@@ -176,13 +194,13 @@ form button[type="submit"]:hover{
 }
 
 #catbutton:hover {
-    background-color: #6B705C;  
+    background-color: #3889cc;  
     transform: scale(1.05);  
 }
 
 #catbutton:active {
     transform: scale(0.98);  /* slightly shrink on click */
-    background-color: #B7B7A4;  
+    background-color: #163650;  
 }
 
 
@@ -192,7 +210,7 @@ form button[type="submit"]:hover{
     position: fixed;
     bottom: 200px;
     right: 185px;
-    background-color: #A5A58D;  
+    background-color: #42a5f5;  
     color: white;  
     border: none;  
     padding: 25px ;  
@@ -203,13 +221,13 @@ form button[type="submit"]:hover{
 }
 
 #closebutton:hover {
-    background-color: #6B705C;  
+    background-color: #3889cc;  
     transform: scale(1.05);  
 }
 
 #closebutton:active {
     transform: scale(0.98);  /* slightly shrink when clicked */
-    background-color: #B7B7A4;  
+    background-color: #163650;  
 }
 .container2 {
     display: flex;
@@ -218,6 +236,10 @@ form button[type="submit"]:hover{
     justify-content: center; 
     height: 7vh; 
 }
+
+textarea {
+    resize: none;
+  }
 
 #catimage {
     display: none; 
@@ -250,14 +272,14 @@ form button[type="submit"]:hover{
 
 
 .secondary {
-    margin: 20px auto;
-    color: #fff;
-    background: #A5A58D;
+    margin: 30px auto;
+    color: #000000;
+    background: #ffffff;
     display: flex;
     flex-direction: column;
     padding: 3vw 3vw;
-    width: 90%;
-    max-width: 600px;
+    width: 70%;
+    max-width: 700px;
     border-radius: 35px;
 }
 
