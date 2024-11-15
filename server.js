@@ -17,14 +17,14 @@ app.get('/success', (req, res) => {
 
 const transporter = nodemailer.createTransport({
   service: 'gmail', 
-  auth: {user: 'legomaster047@gmail.com', pass: 'xhyktomyqhavwhqs'}
+  auth: {user: 'placeholder', pass: 'placeholder'}
 });
 
 app.post('/contact', (req, res) => {
   const {name, email, message } = req.body;
   const mailOptions = {
     from: email,
-    to: 'legomaster047@gmail.com', 
+    to: 'placeholder', 
     subject: `Contact me submission from: ${name}`,
     text: `You've got mail!
     Name: ${name}
